@@ -1,0 +1,16 @@
+.getRating{
+    margin-top: 16px;
+}
+@media screen and (max-width:800px) {
+    .getRating{
+        width: 100%;
+    }
+}
+@media screen and (max-width:375px) {
+   .getRating img{
+    height: 15px;
+width: 15px;
+
+
+   } 
+}

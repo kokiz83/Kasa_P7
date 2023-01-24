@@ -1,0 +1,30 @@
+@import "../mixins";
+@import "../variable";
+
+.imgProduct{
+  height: 340px;
+  width: 340px;
+
+  border-radius: 10px;
+      
+}
+.card-logement{
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+}
+.card-logement__title{
+   position: absolute;
+
+   height: 52px;
+   width: 300px;
+   left: 20px;
+   top: 268px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+
+color: #FFFFFF;
+}

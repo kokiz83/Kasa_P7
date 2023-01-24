@@ -1,0 +1,119 @@
+.collapse {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    gap: 6%;
+
+    &_div {
+        width: 100%;
+
+        &-btn {
+            height: 52px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            background: #FF6060;
+            & .vector{
+                margin-right: 15px;
+            }
+
+            & h2 {
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 142.6%;
+                /* identical to box height, or 26px */
+                margin-left: 15px;
+                display: flex;
+                align-items: center;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.content {
+    background: #F7F7F7;
+    border-radius: 10px;
+
+}
+
+.collapse__list,
+.collapse__text {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* or 26px */
+    list-style-type: none;
+    padding: 23px;
+    color: #FF6060;
+    margin: auto;
+
+
+
+}
+
+@media screen and (max-width:800px) {
+    .collapse {
+        flex-direction: column;
+
+        &_div {
+
+            margin: 20px 0 20px 0;
+        }
+    }
+
+    .content {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .collapse {
+        &_div-btn {
+            height: 30px;
+            width: 335px;
+
+            border-radius: 5px;
+
+            & h2 {
+            
+                font-size: 13px;
+            }
+            & .vector{
+                height: 6px;
+                width: 10px;
+                margin-right: 10px;
+               
+                
+            }
+        }
+        & .collapse__list,
+.collapse__text{
+   
+font-size: 12px;
+font-weight: 400;
+
+
+}
+    }
+
+}
+.collapseAbout{
+    margin:30px 80px 0px 80px ;
+    .collapse_div{
+margin-bottom: 30px;
+    }
+    @media screen and (max-width:760px) {
+        margin: auto;
+    }
+}
