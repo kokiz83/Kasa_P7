@@ -1,26 +1,19 @@
 
 .hostNamePicture{
-    display: flex;
+   @include flex-center;
     width: 96%;
     margin-top: 20px;
-    text-align: center;
-    @media screen and (max-width:800px) {
+    @media screen and (max-width:$breakpoint-desktop-max) {
         justify-content:flex-end;
     }
     
 &_Name{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 142.6%;
-/* or 26px */
-
-display: flex;
-align-items: flex-end;
+  
+@include font;
+@include flex-end;
 text-align: right;
 margin:0 15px 0 0;
-color: #FF6060;
+color:$primary-color;
 }
 &_Picture{
     
@@ -33,7 +26,7 @@ background: #C4C4C4;
 }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:$breakpoint-desktop-max) {
     .host_rating{
 display: flex;
     justify-content: center;
@@ -41,7 +34,7 @@ display: flex;
 align-items:flex-end;
 } 
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:$breakpoint-desktop-min) {
     .hostNamePicture{
         &_Name{
         font-size:12px ;

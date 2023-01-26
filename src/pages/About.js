@@ -3,12 +3,15 @@ import Banner from '../components/Banner';
 import Collabse from '../components/Collabse';
 import imageAbout from "../assets/img/imageBannerAbout.png"
 import aboutData from "../dataAPI/aboutData.json"
+import Footer from "../components/Footer"
 export default function About() {
   const [{ Fiabilité }, { Respect }, { Sérvice }, { Sécurité }] = aboutData
-  console.log({ Fiabilité })
+
   return (
+    <>
+    <main>
     <section>
-      <div>
+      <div className='imagAbout'>
         <Banner image={imageAbout} />
       </div>
       <div className='collapseAbout'>
@@ -19,6 +22,8 @@ export default function About() {
         <Collabse title={Sécurité.title} content={Sécurité.content} />
       </div>
     </section>
+     </main>
+    <Footer/></>
   );
 };
 

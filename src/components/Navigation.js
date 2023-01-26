@@ -6,7 +6,7 @@ export default function Navigation () {
         <nav className='nav-header'>
           
                <Link to="/" className= "nav-header_home">
-                Acueil
+                Accueil
                </Link>
                <Link to="/about"className= "nav-header_about">
 

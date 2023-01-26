@@ -2,8 +2,7 @@
 @import "../variable";
 .headerWrap {
 	
-	display: flex;
-	justify-content: space-between;
+	@include flex-between;
 	align-items: center;
 	margin: 5%;
 	margin: 40px 100px 49px 100px;
@@ -27,7 +26,7 @@
 			width: 100%;
 		}
 	}
-	@media screen and (max-width:770px){
+	@media screen and (max-width:$breakpoint-desktop-max){
 		.headerWrap
 {
 	margin: 28px 15px 24px 15px;

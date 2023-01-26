@@ -1,24 +1,25 @@
+@import "../mixins";
+@import "../variable";
 .nav-header {
-display: flex;
-align-items : center;
-justify-content: flex-end;
+	@include flex-end;
 	text-transform: uppercase;
 
-		&_home,
-		&_about {
-			
-			font-size:24px;
-			font-style: normal;
-			font-weight: 500;
-			text-align: right;
-			line-height: 142.6%;
-			color: #ff6060;
-			text-decoration: none;
-			padding-left: 3.5rem;
-			
-			@media screen and (max-width: 770px) {
-			 font-size: 12px;
-			padding-left: 0.7rem;}
+	&_home,
+	&_about {
+
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		text-align: right;
+		line-height: 142.6%;
+		color: $primary-color;
+		text-decoration: none;
+		padding-left: 3.5rem;
+
+		@media screen and (max-width: $breakpoint-desktop-max) {
+			font-size: 11px;
+			padding-left: 0.7rem;
+		}
 
 		&:hover,
 		&:focus {

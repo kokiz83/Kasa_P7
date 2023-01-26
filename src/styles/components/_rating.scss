@@ -1,12 +1,12 @@
 .getRating{
     margin-top: 16px;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:$breakpoint-desktop-max) {
     .getRating{
         width: 100%;
     }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:$breakpoint-desktop-min) {
    .getRating img{
     height: 15px;
 width: 15px;

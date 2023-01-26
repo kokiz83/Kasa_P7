@@ -1,11 +1,10 @@
 import React from 'react';
+import ErrorPge from '../components/ErrorPge';
 
-const Error = () => {
+export default function Error () {
     return (
-        <div>
-        console.error();
-        </div>
+       <ErrorPge/>
     );
 };
 
-export default Error;
+ 

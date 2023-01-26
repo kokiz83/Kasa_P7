@@ -4,14 +4,15 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Ficheproduct from './pages/FicheProduct';
 import Header from './components/Header';
-import Footer from './components/Footer';
+
 
 
 export default function App() {
   return (
     <div className="App">
+     
       <Header />
-      <main>
+      <>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -20,10 +21,10 @@ export default function App() {
           <Route path="*" element={<Error />} />
 
         </Routes>
-      </main>
-      <Footer/>
-
-    </div>
+      </>
+     
+</div>
+    
 
   );
 };

@@ -1,0 +1,80 @@
+.errorContainer{
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    @include flex-column;
+    margin-top:127px;
+
+}
+
+
+.errorImg{
+
+/* 404 */
+
+
+margin: auto;
+
+font-style: normal;
+font-weight: 700;
+line-height: 142.6%;
+font-size: 288px;
+/* or 411px */
+
+@include flex-center;
+color:$primary-color;
+}
+.errorText{
+    /* Oups! La page que vous demandez n'existe pas. */
+margin-top: 68px;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+font-size: 36px;
+/* or 51px */
+
+text-align: center;
+
+color: $primary-color;
+}
+.errorBackLink{
+
+@include font;
+/* identical to box height, or 26px */
+margin-top: 9rem;
+margin-bottom: 9rem;
+@include flex-center;
+text-decoration-line: underline;
+
+text-align: center;
+
+color: $primary-color;
+}
+
+
+@media screen and (max-width:$breakpoint-desktop-max) {
+    .errorImg{
+        align-items: center;
+    font-size: 96px;
+  width: 198px;
+  height: 85px;
+ 
+        
+    }
+    .errorText{
+      
+        font-size: 18px;
+     
+        margin: 11%;
+        text-align: center;
+
+
+
+    }
+    .errorBackLink{
+      
+       
+        font-size: 14px;
+   
+    }
+}
