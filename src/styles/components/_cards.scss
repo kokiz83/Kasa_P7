@@ -3,7 +3,7 @@
 
 .imgProduct{
  @include heigt-width;
-
+object-fit: cover;
   @include small-radius;
       
 }
