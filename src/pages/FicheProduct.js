@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import Collabse from '../components/Collabse';
 import Footer from '../components/Footer';
 
-//import Collabse from '../components/Collabse';
 import Host from '../components/Host';
 import Rating from '../components/Rating';
 import Slider from '../components/Slider';
